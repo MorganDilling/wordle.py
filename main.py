@@ -24,10 +24,9 @@ def randWord():
 
 def clearConsole():
     command = 'clear'
-    if os.name in ('nt', 'dos'):  # If Machine is running on Windows, use cls
+    if os.name in ['nt', 'dos']:  # If Machine is running on Windows, use cls
         command = 'cls'
-    else:
-      os.system(command)
+    os.system(command)
 
 # colours
 class clr:
